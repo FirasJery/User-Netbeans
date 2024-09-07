@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CertifGUI.ListTestFontController">
+   <children>
+      <Pane fx:id="panna" prefHeight="620.0" prefWidth="1200.0">
+         <children>
+            <ScrollPane fx:id="scrollpanne" layoutY="103.0" prefHeight="517.0" prefWidth="1200.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+              </content>
+            </ScrollPane>
+            <Text layoutX="317.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des tests pour : ">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <Label fx:id="nomcert" layoutX="638.0" layoutY="33.0">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Button layoutX="933.0" layoutY="38.0" mnemonicParsing="false" onAction="#succ" text="Afficher Vos tests reussis" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1200.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReclamationGUI.AffReclamationFXMLController">
+   <children>
+      <Pane fx:id="affpane" layoutY="101.0" prefHeight="526.0" prefWidth="1214.0" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1214.0" spacing="70.0" style="-fx-background-color: #acaaad;">
+         <children>
+            <Hyperlink onAction="#HyperAjoutRecAction" text="Ajouter Réclamation" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink onAction="#HypeSuivieRecAction" text="Suivie Reclamation" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink onAction="#HyperReviews" text="Reviews" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink onAction="#HyperTopFive" text="Top 5" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="BtnStat" onAction="#showStat" text="Stat" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

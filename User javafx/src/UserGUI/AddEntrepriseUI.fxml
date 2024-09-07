@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserGUI.AddEntrepriseUIController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/inscriBG.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="277.0" layoutY="137.0" spacing="5.0">
+         <children>
+            <TextField fx:id="tf_nom" />
+            <Label fx:id="labelNomError" textFill="RED" />
+            <TextField fx:id="tfusername" />
+            <Label fx:id="labelerrorusername" textFill="RED" />
+            <TextField fx:id="tf_mail" />
+            <Label fx:id="labelMailError" textFill="RED" />
+            <PasswordField fx:id="tf_password" />
+            <Label fx:id="labelPasswordError" textFill="RED" />
+            <PasswordField fx:id="tfconfirm" />
+            <Label fx:id="labelerrorconfirm" textFill="RED" />
+            <TextField fx:id="tf_info" />
+            <Label fx:id="labelInfoError" textFill="RED" />
+            <TextField fx:id="tf_domaine" />
+            <Label fx:id="labelDomaineError" textFill="RED" />
+            <TextField fx:id="tf_adresse" />
+            <Label fx:id="labelAdresseError" textFill="RED" />
+            <TextField fx:id="tf_nbe" />
+            <Label fx:id="labelNbeError" textFill="RED" />
+         </children>
+      </VBox>
+      <Button fx:id="btn_select_image" layoutX="788.0" layoutY="614.0" mnemonicParsing="false" onAction="#btn_image_action" prefHeight="31.0" prefWidth="141.0" text="Insére Image">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn_inscrire" layoutX="241.0" layoutY="719.0" mnemonicParsing="false" onAction="#btn_inscrire_action" prefHeight="31.0" prefWidth="129.0" text="S'inscrire">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn_annuler" layoutX="407.0" layoutY="719.0" mnemonicParsing="false" onAction="#btn_annuler_action" prefHeight="31.0" prefWidth="141.0" text="Annuler">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="image_link" layoutX="640.0" layoutY="126.0" prefHeight="21.0" prefWidth="373.0" visible="false" />
+      <ImageView fx:id="ImagePreview" fitHeight="301.0" fitWidth="344.0" layoutX="669.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnRetour" layoutX="1030.0" layoutY="719.0" mnemonicParsing="false" onAction="#btnRetourAction" prefHeight="31.0" prefWidth="129.0" text="Retour">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <VBox layoutX="36.0" layoutY="134.0" prefHeight="528.0" prefWidth="213.0" spacing="35.0">
+         <children>
+            <Label text="Nom Entreprise" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label text="Entreprise Username" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label text="Email" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label text="Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label text="Confirmer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label text="Information" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label text="Domaine" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label text="Adresse" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label text="Nombre employess" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OffresGUI.OffresBackController">
+   <children>
+      <ListView fx:id="list" layoutX="77.0" layoutY="103.0" onMousePressed="#setFields" prefHeight="503.0" prefWidth="200.0" />
+      <Label layoutX="333.0" layoutY="106.0" text="ID" />
+      <Label layoutX="324.0" layoutY="148.0" text="Titre" />
+      <Label layoutX="301.0" layoutY="191.0" text="Description" />
+      <ComboBox fx:id="searchBy" layoutX="77.0" layoutY="50.0" onAction="#filter_search" prefHeight="31.0" prefWidth="200.0" />
+      <TextField fx:id="id" editable="false" layoutX="405.0" layoutY="101.0" text="ID" />
+      <TextField fx:id="titre" layoutX="405.0" layoutY="143.0" />
+      <TextArea fx:id="description" layoutX="405.0" layoutY="191.0" prefHeight="215.0" prefWidth="588.0" promptText="Description..." />
+      <Label layoutX="309.0" layoutY="441.0" text="Categorie" />
+      <TextField fx:id="categorie" layoutX="405.0" layoutY="436.0" />
+      <Label layoutX="319.0" layoutY="485.0" text="Salaire" />
+      <TextField fx:id="salaire" layoutX="405.0" layoutY="480.0" />
+      <Label layoutX="312.0" layoutY="527.0" text="Accepté" />
+      <ComboBox fx:id="accept" layoutX="405.0" layoutY="522.0" prefHeight="31.0" prefWidth="187.0" />
+      <ComboBox fx:id="fini" layoutX="405.0" layoutY="565.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="329.0" layoutY="570.0" text="Fini" />
+      <Label layoutX="699.0" layoutY="106.0" text="ID Entreprise" />
+      <Label layoutX="684.0" layoutY="441.0" text="Date Debut" />
+      <Label layoutX="695.0" layoutY="485.0" text="Date Fin" />
+      <DatePicker fx:id="date_d" layoutX="775.0" layoutY="436.0" />
+      <DatePicker fx:id="date_fin" layoutX="775.0" layoutY="480.0" />
+      <Button layoutX="428.0" layoutY="636.0" mnemonicParsing="false" onAction="#add" text="Ajouter" />
+      <Button layoutX="574.0" layoutY="636.0" mnemonicParsing="false" onAction="#del" text="Supprimer" />
+      <Button layoutX="735.0" layoutY="636.0" mnemonicParsing="false" onAction="#modif" text="Modifier" />
+      <Button layoutX="135.0" layoutY="636.0" mnemonicParsing="false" onAction="#refresh" text="Actualiser" />
+      <ComboBox fx:id="id_entreprise" layoutX="793.0" layoutY="101.0" prefHeight="31.0" prefWidth="200.0" />
+      <Button layoutX="1037.0" layoutY="636.0" mnemonicParsing="false" onAction="#go_post" text="Go Postulation" />
+   </children>
+</AnchorPane>

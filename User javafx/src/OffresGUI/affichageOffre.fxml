@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1200.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OffresGUI.AffichageOffreController">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <Pane fx:id="Pane" prefHeight="620.0" prefWidth="1200.0">
+         <children>
+            <ScrollPane fx:id="scrollPane" layoutX="68.0" layoutY="71.0" prefHeight="541.0" prefWidth="1064.0">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </ScrollPane>
+            <Button layoutX="386.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnOffreEncoursAction" prefHeight="31.0" prefWidth="153.0" text="Vos Offres en cours">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="552.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnOffreTermineAction" prefHeight="31.0" prefWidth="178.0" text="Vos offres terminés">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="213.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnOffrePostulesAction" prefHeight="31.0" prefWidth="163.0" text="Offres postulés ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnOffre" layoutX="68.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnOffreAction" prefHeight="31.0" prefWidth="133.0" text="Offres">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="1088.0" layoutY="24.0" mnemonicParsing="false" onAction="#stat" text="Statistique" />
+            <TextField fx:id="tfRecherche" layoutX="868.0" layoutY="24.0" />
+            <Label layoutX="780.0" layoutY="29.0" text="Recherche" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LoginUIController">
+   <children>
+      <Label layoutX="337.0" layoutY="208.0" prefHeight="18.0" prefWidth="63.0" text="Email">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="335.0" layoutY="266.0" prefHeight="18.0" prefWidth="101.0" text="Mot de passe">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Button layoutX="573.0" layoutY="329.0" mnemonicParsing="false" onAction="#On_annuler_clicked" prefHeight="38.0" prefWidth="116.0" style="-fx-background-color: #0598ff;" text="Annuler">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button fx:id="Button_se_connecter" layoutX="416.0" layoutY="329.0" mnemonicParsing="false" onAction="#ON_seconnecter_clicked" prefHeight="38.0" prefWidth="116.0" style="-fx-background-color: #0598ff;" text="Se connecter">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <TextField fx:id="TF_Email_login" layoutX="470.0" layoutY="189.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;;" />
+      <Button fx:id="button_inscrire" layoutX="470.0" layoutY="481.0" mnemonicParsing="false" onAction="#ON_inscrire_clicked" prefHeight="38.0" prefWidth="168.0" style="-fx-background-color: #0598ff;" text="Inscription Freelancer">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <PasswordField fx:id="TF_Paswword_login" layoutX="470.0" layoutY="247.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;;" />
+      <BorderPane prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #0598ff;" />
+      <Hyperlink fx:id="LinkReset" layoutX="466.0" layoutY="378.0" onAction="#OnResetClicked" prefHeight="24.0" prefWidth="196.0" text="Forget your password ?" />
+   </children>
+</AnchorPane>

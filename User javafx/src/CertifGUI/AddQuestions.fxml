@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CertifGUI.AddQuestionsController">
+   <children>
+      <Label layoutX="96.0" layoutY="75.0" text="Question" />
+      <Label layoutX="110.0" layoutY="120.0" text="Note" />
+      <Label layoutX="110.0" layoutY="170.0" text="Type" />
+      <TextField fx:id="question" layoutX="203.0" layoutY="70.0" prefHeight="31.0" prefWidth="359.0" />
+      <TextField fx:id="note" layoutX="203.0" layoutY="120.0" prefHeight="31.0" prefWidth="359.0" />
+      <ComboBox fx:id="type" layoutX="203.0" layoutY="170.0" onAction="#typeSwitched" prefHeight="31.0" prefWidth="359.0" />
+      <Button layoutX="369.0" layoutY="603.0" mnemonicParsing="false" onAction="#ajouterQuestion" text="Ajouter" />
+      <Button layoutX="530.0" layoutY="603.0" mnemonicParsing="false" onAction="#finQuestion" text="Fin" />
+      <TextField fx:id="reponse" layoutX="706.0" layoutY="70.0" prefHeight="31.0" prefWidth="359.0" />
+      <Label layoutX="629.0" layoutY="75.0" text="Reponse" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CertifGUI.ListeCertifFrontController">
+   <children>
+      <Pane fx:id="pana" layoutX="6.0" prefHeight="620.0" prefWidth="1200.0">
+         <children>
+            <ScrollPane fx:id="scrollpanne" layoutX="-3.0" layoutY="127.0" prefHeight="498.0" prefWidth="1206.0" />
+            <Text layoutX="493.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nos Certification" textAlignment="CENTER" wrappingWidth="213.42724609375">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

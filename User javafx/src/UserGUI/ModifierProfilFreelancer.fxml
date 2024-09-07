@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserGUI.ModifierProfilFreelancerController">
+   <children>
+      <Button fx:id="btnRetour" layoutX="1031.0" layoutY="512.0" mnemonicParsing="false" onAction="#btnRetourAction" text="Retour" />
+      <VBox layoutX="231.0" layoutY="44.0" prefHeight="422.0" prefWidth="175.0" spacing="5.0">
+         <children>
+            <TextField fx:id="TF_nom" prefHeight="12.0" prefWidth="187.0" />
+            <Label fx:id="labelNomError" textFill="#c31111" />
+            <TextField fx:id="tfprenom" />
+            <Label fx:id="labelerrorprenom" textFill="#e11414" />
+            <TextField fx:id="tfusername" />
+            <Label fx:id="labelerrorusername" textFill="#e11414" />
+            <TextField fx:id="TF_email" />
+            <Label fx:id="labelEmailError" textFill="#c31111" />
+            <PasswordField fx:id="TF_mdp" />
+            <Label fx:id="labelMdpError" textFill="#c31111" />
+            <PasswordField fx:id="tfconfirm" />
+            <Label fx:id="labelerrorconfirm" textFill="#c61b1b" />
+            <TextField fx:id="TF_bio" />
+            <Label fx:id="labelBioError" textFill="#c31111" />
+            <TextField fx:id="Tf_experience" />
+            <Label fx:id="labelExpError" textFill="#c31111" />
+            <TextField fx:id="TF_education" />
+            <Label fx:id="labelEduError" textFill="#c31111" />
+         </children>
+      </VBox>
+      <VBox layoutX="66.0" layoutY="52.0" prefHeight="332.0" prefWidth="102.0" spacing="40.0">
+         <children>
+            <Label text="Nom" />
+            <Label text="Prenom" />
+            <Label text="Usename" />
+            <Label text="Email" />
+            <Label text="Mot de passe" />
+            <Label text="Confirm" />
+            <Label text="bio" />
+            <Label prefHeight="21.0" prefWidth="120.0" text="experience" />
+            <Label text="education" />
+         </children>
+      </VBox>
+      <Button fx:id="button_annuler" layoutX="441.0" layoutY="546.0" mnemonicParsing="false" onAction="#on_annuler_clicked" prefHeight="31.0" prefWidth="151.0" text="Annuler" />
+      <Button fx:id="Add_image_button" layoutX="746.0" layoutY="47.0" mnemonicParsing="false" onAction="#add_image_action" text="Ajouter Photo" />
+      <Label fx:id="imageLabel" layoutX="895.0" layoutY="52.0" prefHeight="21.0" prefWidth="263.0" />
+      <ImageView fx:id="ImagePreviw" fitHeight="249.0" fitWidth="269.0" layoutX="892.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnmodif" layoutX="439.0" layoutY="481.0" mnemonicParsing="false" onAction="#btnModifAction" prefHeight="31.0" prefWidth="151.0" text="Modifier" />
+   </children>
+</AnchorPane>
